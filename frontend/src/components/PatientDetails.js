@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import BASE_URL from '../config'; // Import the base URL
 import { Loader2, AlertCircle, Stethoscope, Calendar, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom'; // or the appropriate library
-import { PlusCircle } from 'your-icon-library'; // adjust the path accordingly
+import { FaPlusCircle } from 'react-icons/fa'; // Font Awesome
 
 export default function PatientDetails() {
   const { id } = useParams();
@@ -96,7 +96,7 @@ export default function PatientDetails() {
             <div className="px-4 py-5 sm:px-6">
               <Link to={`/patients/${id}/authorize`}>
                 <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out flex items-center justify-center">
-                  <PlusCircle className="w-5 h-5 mr-2" />
+                  <FaPlusCircle className="w-5 h-5 mr-2" />
                   Request Authorization
                 </button>
               </Link>
