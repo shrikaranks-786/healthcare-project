@@ -9,7 +9,7 @@ app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Middleware to parse JSON bodies
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://shrikaranks:JATNrZb9IeDkLIQ4@cluster0.fch4t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect("mongodb+srv://shrikaranksise2024:stJAwoCTAV4g4XBp@cluster0.66vt7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 
