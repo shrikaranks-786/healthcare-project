@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import BASE_URL from '../config'; // Import the base URL
 import { Loader2, AlertCircle, Stethoscope, Calendar, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom'; // or the appropriate library
+import { PlusCircle } from 'your-icon-library'; // adjust the path accordingly
 
 export default function PatientDetails() {
   const { id } = useParams();
